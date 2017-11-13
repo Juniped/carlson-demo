@@ -5,7 +5,7 @@ class Home extends React.Component {
     return (
       <div>
         <h1 align="center">Home</h1>
-        <p>This site is here is my example/personal project work and coding practice.</p>
+        <p>This site is here is my example/personal project work and coding practice. The CSS is rough so please bear with me while it improves.</p>
  
         <p>Feel free to take a look around</p>
       </div>

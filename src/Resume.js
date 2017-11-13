@@ -40,10 +40,16 @@ class Resume extends React.Component {
           				<img height="240" src={require("./images/patrick.jpg")} alt="My wife and me" />
           			</Col>
           			<Col md={7} sm={12} xs={12} lg={9}>
-          				<p style={fontStyle}> 
-I am a developer based out of Raleigh, NC. I currently work full time at Red Hat while attending North Carolina State University
-for my BS in Computer Science. Most of my experience has been on backend automation with Python and Django connectors for Business Processes.
-I have a small amount of Web Design experience, and I am always willing to learn more.</p>
+          				<p style={fontStyle}><b> A little about me:</b><br />
+                        I am a developer based out of Raleigh, NC. I currently work full time at Red Hat while attending North Carolina State University
+                        for my BS in Computer Science. Most of my experience has been on backend automation with Python and Django connectors for Business Processes.
+                        I have a small amount of Web Design experience, and I am always willing to learn more. I have worked at Red Hat for almost three years, and I have previous
+                        experience working for NCSU maintaining Databases and working walk-up help desks while in High School.</p>
+                        <p>
+                        I was born in California and moved to North Carolina when I was 15. My family lives in Boone and I grated High School from there as well. I started school at NCSU by majoring in 
+                        Computer Engineering butI changed to Computer Science my Sophmore year. In my free time I paint minature models and play competative shooters. 
+                        I live in South East Raleigh with my Wife Katie and our dog Otto who make up my wonderful family. 
+                        </p>
           			</Col>
         		</Row>
 				<hr />
