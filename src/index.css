@@ -8,18 +8,18 @@ body {
 }
 
 
-ul {
+ul.top-bar {
     list-style-type: none;
     width: 100%;
     height: 46px;
     margin: 0;
     padding: 0;
-    /*overflow: hidden;*/
+    overflow: hidden;
     position: fixed; /* Make it stick, even on scroll */
     background-color: #000099;
 }
 
-li {
+li.top-bar {
     float: left;
     display: block;
     color: white;
@@ -27,11 +27,11 @@ li {
     text-decoration: none;
 }
 
-li:hover {
+li.top-bar:hover {
     background-color: #111;
 }
 
-a {
+a.top-bar {
 	float: left;
     display: block;
     color: white;
@@ -40,7 +40,20 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a.top-bar:hover {
+	background-color: #111;
+}
+
+NavLink.top-bar{
+	float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+NavLink.top-bar:hover {
 	background-color: #111;
 }
 
@@ -57,3 +70,4 @@ a:hover {
 .main-content li {
   margin-bottom: 10px;
 }
+

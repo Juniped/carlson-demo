@@ -20,8 +20,11 @@ let continerStyle = {
 export default class App extends React.Component{
 	render() {
 		return(
+
 			<HashRouter>
+
 			<div >
+			
 				<TopBar />
 				<br />
 				<Content />
@@ -33,11 +36,12 @@ export default class App extends React.Component{
 
 function TopBar() {
 	return (
-		<ul>
-		  <li><NavLink to="/">Home</NavLink></li>
-		  <li><NavLink to="/Resume">Resume</NavLink></li>
-		  <li><a href="mailto:pats.carlson@gmail.com">Contact</a></li>
-		  <li><a href="https://github.com/Juniped" target="_blank">GitHub</a></li>
+		<ul className="top-bar">
+		  <li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
+		  <li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
+		  <li className="top-bar"><a className="top-bar" href="mailto:pats.carlson@gmail.com">Contact</a></li>
+		  <li className="top-bar"><a className="top-bar" href="https://github.com/Juniped" target="_blank">GitHub</a></li>
+		  <li className="top-bar"><a className="top-bar" href="https://www.linkedin.com/in/junipedncsu/" target="_blank">LinkedIn</a></li>
 		</ul>
 	);
 }

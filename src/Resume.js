@@ -1,25 +1,67 @@
 import React from "react";
+import Container from 'muicss/lib/react/container';
+import Row from 'muicss/lib/react/row';
+import Col from 'muicss/lib/react/col';
 // import Image from 'react-native';
+
+
+const fontStyle = {
+	fontSize: "15px",
+}
+
+const hrList ={
+	float: "left",
+	textDecoration: 'none',
+}
+
+const listStyling = {
+    listStyleType: 'none',
+    margin:'0',
+    padding: '0px',
+    overflow: 'hidden',
+    backgroundColor: '#33333',
+    display:'block',
+    textAlign: 'center',
+}
+
 
 
 class Resume extends React.Component {
   render() {
     return (
       <div>
+      <link href="//cdn.muicss.com/mui-0.9.28/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
+      <Container fluid={true}>
+      <Row>
         <h2 align="center">PATRICK CARLSON</h2>
-<img height="250" src={require("./images/patrick.jpg")} alt="My dog and me" />
+       </Row>
+       <Row>
+          <Col md={5} sm={12} xs={12} lg={3}>
+          	<img height="240" src={require("./images/patrick.jpg")} alt="My wife and me" />
+          </Col>
+          <Col md={7} sm={12} xs={12} lg={9}>
+          	<p style={fontStyle}> I am a developer based out of Raleigh, NC. I currently work full time at Red Hat while attending North Carolina State University
+for my BS in Computer Science. Most of my experience has been on backend automation with Python and Django connectors for Business Processes.
+I have a small amount of Web Design experience, and while I have worked on existing projects, I have less experience starting
+new projects.</p>
+          </Col>
+       </Row>
 
 
-<p>1910 Entrepreneur Drive Unit #1154, Raleigh NC 27606
-(828)-263-6714 – pats.carlson@gmail.com
-Education:
-North Carolina State University, Raleigh, NC
-B.S. in Computer Science, Intended graduation: May 2017
-Related Courses: Data Structures, Ethics in Computing, Game Engine Foundations, Database
-Management Systems, Intro to Computing – Java, Programming Concepts- Java
-Skills:
-Programming Languages:
-• Java, C, Python, Assembly, HTML, CSS, JavaScript, JavaScript Frameworks ( Angular, Aurelia)
+
+
+<h4> Location: Raleigh, NC </h4>
+<hr />
+<p>
+Education:<br />
+North Carolina State University, Raleigh, NC <br />
+B.S. in Computer Science, (2012-Present)
+<br />
+<br />
+<b>Skills:</b><br />
+Programming Languages:<br />
+Java, Python, C, HTML, CSS, JavaScript, JS Frameworks(React, Angular), Django
+<br />
 Operating Systems:
 • Windows ( 8, 7, Vista, XP, DOS) RHEL, Fedora
 Database Systems:
@@ -46,6 +88,7 @@ President, May 2014 – August 2015
 across the state.
 Honors / Awards
 Eagle Scout – Boy Scouts of America</p>
+	  </Container>
       </div>
     );
   }
