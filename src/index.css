@@ -42,7 +42,9 @@ a.top-bar {
 
 a.top-bar:hover {
 	background-color: #111;
+	text-decoration: none;
 }
+
 
 NavLink.top-bar{
 	float: left;

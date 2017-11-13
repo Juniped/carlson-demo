@@ -2,6 +2,7 @@ import React from "react";
 import Container from 'muicss/lib/react/container';
 import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
+import FontAwesome from 'react-fontawesome';
 // import Image from 'react-native';
 
 
@@ -29,42 +30,43 @@ const listStyling = {
 class Resume extends React.Component {
   render() {
     return (
-      <div>
-      <link href="//cdn.muicss.com/mui-0.9.28/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
-      <Container fluid={true}>
-      <Row>
-        <h2 align="center">PATRICK CARLSON</h2>
-       </Row>
-       <Row>
-          <Col md={5} sm={12} xs={12} lg={3}>
-          	<img height="240" src={require("./images/patrick.jpg")} alt="My wife and me" />
-          </Col>
-          <Col md={7} sm={12} xs={12} lg={9}>
-          	<p style={fontStyle}> I am a developer based out of Raleigh, NC. I currently work full time at Red Hat while attending North Carolina State University
+    	<div>
+      		<Container fluid={true}>
+      			<Row>
+        			<h2 align="center">PATRICK CARLSON</h2>
+       			</Row>
+       			<Row>
+          			<Col md={5} sm={12} xs={12} lg={3}>
+          				<img height="240" src={require("./images/patrick.jpg")} alt="My wife and me" />
+          			</Col>
+          			<Col md={7} sm={12} xs={12} lg={9}>
+          				<p style={fontStyle}> 
+I am a developer based out of Raleigh, NC. I currently work full time at Red Hat while attending North Carolina State University
 for my BS in Computer Science. Most of my experience has been on backend automation with Python and Django connectors for Business Processes.
 I have a small amount of Web Design experience, and while I have worked on existing projects, I have less experience starting
 new projects.</p>
-          </Col>
-       </Row>
+          			</Col>
+        		</Row>
+				<hr />
+        		<Row>
+        			<Col lg={1}>
+        				<h4><b>Location:</b> Raleigh, NC</h4>
+        			</Col>
+       			</Row>
 
-
-
-
-<h4> Location: Raleigh, NC </h4>
-<hr />
 <p>
-Education:<br />
+<b>Education:</b><br />
 North Carolina State University, Raleigh, NC <br />
 B.S. in Computer Science, (2012-Present)
 <br />
-<br />
 <b>Skills:</b><br />
 Programming Languages:<br />
-Java, Python, C, HTML, CSS, JavaScript, JS Frameworks(React, Angular), Django
+• Java, Python, C, HTML, CSS, JavaScript, JS Frameworks(React, Angular), Django
 <br />
-Operating Systems:
-• Windows ( 8, 7, Vista, XP, DOS) RHEL, Fedora
-Database Systems:
+Operating Systems:<br />
+• Windows ( 8, 7, Vista, XP, DOS) RHEL, Fedora, Ubuntu
+<br />
+Database Systems: <br />
 • SQL, MySQL, MongoDB
 Technical Experience:
 Snowshoe Hare Recognition Testing Program, Individual Undergrad Research
