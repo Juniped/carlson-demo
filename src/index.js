@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Container from 'muicss/lib/react/container';
-import Row from 'muicss/lib/react/row';
-import Col from 'muicss/lib/react/col';
-import Button from 'muicss/lib/react/button';
 
 // import registerServiceWorker from './registerServiceWorker
 // let imageUrl = 'bg.jpg';
