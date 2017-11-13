@@ -1,11 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
 import './index.css';
-
-// import registerServiceWorker from './registerServiceWorker
-// let imageUrl = 'bg.jpg';
-
-
+import Home from "./Home";
+import Resume from './Resume'
 
 let continerStyle = {
 	marginLeft:"0px",
@@ -14,20 +16,17 @@ let continerStyle = {
 	paddingTop: "17px",
 }
 
-// let navStyle = {
-// 	// background:"white",
-// 	border: "2px solid red"
-// };
+
 export default class App extends React.Component{
 	render() {
 		return(
+			<HashRouter>
 			<div >
 				<TopBar />
 				<br />
-				<div style={continerStyle}>
-					<Home name="Patrick" />
-				</div>
+				<Content />
 			</div>
+			</HashRouter>
 		);
 	}
 }
@@ -35,17 +34,20 @@ export default class App extends React.Component{
 function TopBar() {
 	return (
 		<ul>
-		  <li><a href="#home">Home</a></li>
-		  <li><a href="#news">News</a></li>
+		  <li><NavLink to="/">Home</NavLink></li>
+		  <li><NavLink to="/Resume">Resume</NavLink></li>
 		  <li><a href="mailto:pats.carlson@gmail.com">Contact</a></li>
 		  <li><a href="https://github.com/Juniped" target="_blank">GitHub</a></li>
 		</ul>
-	)
+	);
 }
 
-function Home(props) {
+function Content() {
 	return (
-			<h1 align="Center"> Home</h1>
+		<div className="main-content">
+			<Route exact path="/" component={Home}/>
+	        <Route path="/Resume" component={Resume}/>
+        </div>
 	);
 }
 
