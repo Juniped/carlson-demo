@@ -10,10 +10,6 @@ import './index.css';
 import Home from "./Home";
 import Resume from './Resume';
 import Contact from './Contact';
-import Container from 'muicss/lib/react/container';
-import Row from 'muicss/lib/react/row';
-import Col from 'muicss/lib/react/col';
-
 
 let continerStyle = {
 	marginLeft:"0px",
@@ -22,17 +18,23 @@ let continerStyle = {
 	paddingTop: "17px",
 }
 
+let mainContainer = {
+    padding: "40px",
+}
 
 export default class App extends React.Component{
 	render() {
 		return(
 			<HashRouter>
-			<div >
-			<link href="//cdn.muicss.com/mui-0.9.28/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
-			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-				<TopBar />
-				<Content />
-			</div>
+        		<div >
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+        			<link href="//cdn.muicss.com/mui-0.9.28/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
+        			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    				
+                        <TopBar />
+          				<Content />
+    			</div>
 			</HashRouter>
 		);
 	}
@@ -41,35 +43,41 @@ const liStyle = {
 	marginTop: '2px',
 }
 
+const navbarStyle = {
+    backgroundColor: "#ce1616",
+}
+
 function TopBar() {
 	return (
-		<ul className="top-bar">
-		  <li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
-		  <li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
-		  <li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
-		  <li className="top-bar">
-		  	<a className="top-bar" href="https://github.com/Juniped" target="_blank">
-		  		<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
-		  	</a>
-		  </li>
-		</ul>
+        <nav class="navbar" style={navbarStyle} role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+
+            </div>
+            <div class="navbar-menu">
+        		<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
+        		<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
+        		<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
+        		<li className="top-bar">
+            		<a className="top-bar" href="https://github.com/Juniped" target="_blank">
+            		  	<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
+            		</a>
+    	        </li>
+            </div>
+            </nav>
 	);
 }
 
 function Content() {
 	return (
-		<Container>
-			<Row>
-				<div className="main-content">
-					<Route exact path="/" component={Home}/>
-			        <Route path="/Resume" component={Resume}/>
-			        <Route path="/Contact" component={Contact}/>
-		        </div>
-	        </Row>
-        </Container>
+    	<div className="container" style={mainContainer}>
+            <div class="card">
+    			<Route exact path="/" component={Home}/>
+                <Route path="/Resume" component={Resume}/>
+    	        <Route path="/Contact" component={Contact}/>
+            </div>
+        </div>
 	);
 }
-
 
 ReactDOM.render(
 	<App />, 
