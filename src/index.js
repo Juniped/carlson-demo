@@ -62,7 +62,8 @@ function TopBar() {
             		  	<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
             		</a>
     	        </li>
-             <div class="navbar-burger">
+            </div>
+            <div class="navbar-burger">
         		<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
         		<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
         		<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
