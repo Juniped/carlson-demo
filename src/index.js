@@ -53,7 +53,7 @@ function TopBar() {
             <div class="navbar-brand">
 
             </div>
-            <div class="tabs">
+            <div class="navbar">
         		<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
         		<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
         		<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
