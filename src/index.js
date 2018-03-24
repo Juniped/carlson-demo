@@ -30,7 +30,7 @@ export default class App extends React.Component{
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
         			<link href="//cdn.muicss.com/mui-0.9.28/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
-        			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+        			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous" />
 
                         <TopBar />
           				<Content />
@@ -64,14 +64,14 @@ function TopBar() {
     	        </li>
             </div>
 			<div className="navbar-burger is-hidden-tablet">
-				<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
-				<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
-				<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
-				<li className="top-bar">
+				<span className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></span>
+				<span className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></span>
+				<span className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></span>
+				<span className="top-bar">
 					<a className="top-bar" href="https://github.com/Juniped" target="_blank">
 						<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
             		</a>
-				</li>
+				</span>
 			</div>
 
             </nav>
