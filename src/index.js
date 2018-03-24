@@ -53,7 +53,7 @@ function TopBar() {
             <div class="navbar-brand">
 
             </div>
-            <div class="navbar-menu is-hidden-mobile">
+            <div className="navbar-menu is-hidden-mobile">
         		<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
         		<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
         		<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
@@ -63,7 +63,7 @@ function TopBar() {
             		</a>
     	        </li>
             </div>
-			<div class="navbar-burger is-hidden-tablet">
+			<div className="navbar-burger is-hidden-tablet">
 				<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
 				<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
 				<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
