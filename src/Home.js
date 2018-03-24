@@ -1,5 +1,5 @@
 import React, { Component } from "react";
- 
+
 class Home extends React.Component {
   render() {
     return (
@@ -13,12 +13,9 @@ class Home extends React.Component {
 	        	<p>This site is here is my example/personal project work and coding practice. The CSS is rough so please bear with me while it improves.</p>
 	        	<p>Feel free to take a look around</p>
 	        </div>
-         <div>
-          <p class=" is-hidden-tablet"> test</p>
-         </div>
 	    </div>
     );
   }
 }
- 
+
 export default Home

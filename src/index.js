@@ -31,7 +31,7 @@ export default class App extends React.Component{
                     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
         			<link href="//cdn.muicss.com/mui-0.9.28/css/mui.min.css" rel="stylesheet" type="text/css" media="screen" />
         			<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-    				
+
                         <TopBar />
           				<Content />
     			</div>
@@ -63,7 +63,17 @@ function TopBar() {
             		</a>
     	        </li>
             </div>
-            
+			<div class="navbar-burger is-hidden-tablet">
+				<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
+				<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
+				<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
+				<li className="top-bar">
+					<a className="top-bar" href="https://github.com/Juniped" target="_blank">
+						<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
+            		</a>
+				</li>
+			</div>
+
             </nav>
 	);
 }
@@ -81,7 +91,7 @@ function Content() {
 }
 
 ReactDOM.render(
-	<App />, 
+	<App />,
 	document.getElementById('root')
 );
 // registerServiceWorker();
