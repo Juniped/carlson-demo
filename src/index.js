@@ -63,16 +63,7 @@ function TopBar() {
             		</a>
     	        </li>
             </div>
-            <div class="navbar-burger">
-        		<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
-        		<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
-        		<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
-        		<li className="top-bar">
-            		<a className="top-bar" href="https://github.com/Juniped" target="_blank">
-            		  	<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
-            		</a>
-    	        </li>
-            </div>
+            
             </nav>
 	);
 }
