@@ -51,7 +51,12 @@ function TopBar() {
 	return (
         <nav class="navbar" style={navbarStyle} role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-
+              <div className="navbar-burger is-hidden-tablet">
+				        <span >Home></span>
+				        <span >Resume</span>
+				        <span >Contact></span>
+				        <span>github</span>
+			</div>
             </div>
             <div className="navbar-menu is-hidden-mobile">
         		<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
@@ -63,12 +68,7 @@ function TopBar() {
             		</a>
     	        </li>
             </div>
-			<div className="navbar-burger is-hidden-tablet">
-				<span >Home></span>
-				<span >>Resume</span>
-				<span >Contact></span>
-				<span>github</span>
-			</div>
+			
 
             </nav>
 	);
