@@ -64,14 +64,10 @@ function TopBar() {
     	        </li>
             </div>
 			<div className="navbar-burger is-hidden-tablet">
-				<span className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></span>
-				<span className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></span>
-				<span className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></span>
-				<span className="top-bar">
-					<a className="top-bar" href="https://github.com/Juniped" target="_blank">
-						<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
-            		</a>
-				</span>
+				<span >Home></span>
+				<span >>Resume</span>
+				<span >Contact></span>
+				<span>github</span>
 			</div>
 
             </nav>
