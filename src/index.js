@@ -47,28 +47,35 @@ const navbarStyle = {
     backgroundColor: "#ce1616",
 }
 
+// const navMenuStyle = {
+// 	marginBottom: '100px'
+// }
+
 function TopBar() {
 	return (
-        <nav className="navbar" style={navbarStyle} role="navigation" aria-label="main navigation">
+        <nav className="navbar" style={navbarStyle} aria-label="main navigation">
             <div className="navbar-brand">
-				<i className="fa ellipsis-h" />
-				<div className="navbar-burger is-hidden-tablet">
-					<span >Home></span>
-					<span >Resume</span>
-					<span >Contact></span>
-					<span>github</span>
-				</div>
+				<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
+				<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
+				<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
+				<li className="top-bar">
+					<a className="top-bar" href="https://github.com/Juniped" target="_blank">
+						<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
+            			</a>
+				</li>
 			</div>
-            <div className="navbar-menu is-hidden-mobile">
-        		  <li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
-        		  <li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
-        		  <li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
-        		  <li className="top-bar">
-            		<a className="top-bar" href="https://github.com/Juniped" target="_blank">
-            		  	<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
-            		</a>
-    	        </li>
-            </div>
+            {/* <div className="navbar-menu is-active">
+				<div className="navbar-start">
+        		  	<li className="top-bar"><NavLink className="top-bar" to="/">Home</NavLink></li>
+        		  	<li className="top-bar"><NavLink className="top-bar" to="/Resume">Resume</NavLink></li>
+        		  	<li className="top-bar"><NavLink className="top-bar" to="/Contact">Contact</NavLink></li>
+        		  	<li className="top-bar">
+            			<a className="top-bar" href="https://github.com/Juniped" target="_blank">
+            		  		<i style={liStyle} className="fa fa-github fa-pull-left" aria-hidden="true"></i>GitHub
+            			</a>
+    	        	</li>
+				</div>
+            </div> */}
        </nav>
 	);
 }
