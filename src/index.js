@@ -51,6 +51,7 @@ function TopBar() {
 	return (
         <nav className="navbar" style={navbarStyle} role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
+				<i className="fa ellipsis-h" />
 				<div className="navbar-burger is-hidden-tablet">
 					<span >Home></span>
 					<span >Resume</span>
