@@ -28,15 +28,11 @@ class Contact extends React.Component {
     			<Row>
     				<Col lg={6} style={border}>
                         <p style={fontStyle}><b> A little about me:</b><br />
-                            I am a developer based out of Raleigh, NC. I currently work full time at Cisco as a Automation Software Engineer. Most of my experience has been on backend automation with Python and Django connectors for Business Processes.
-                            I have a small amount of Web Development experience, and I am always willing to learn more. I graduated North Carolina State University wioth a B.S. in Computer Science in 2017, and I have previous
-                            experience working for NCSU maintaining Databases and working walk-up help desks while in High School.</p>
-                        <p>
-                            I was born in California and moved to North Carolina when I was 15. My family lives in Boone and I grated High School from there as well. I started school at NCSU by majoring in
-                            Computer Engineering butI changed to Computer Science my Sophmore year. In my free time I paint minature models and play competative shooters.
-                            I live in South East Raleigh with my Wife Katie and our dog Otto who make up my wonderful family.
-                        </p>
-    					<p>
+                            Primarily Backend DevOps Engineer in InfoSec at Cisco.
+      
+                            Experienced in Python and various Python frameworks, as well as various Databases, JS and JS Frameworks.
+                            Primarily focused on Python and assocaited development.
+      
                             Please feel free to reach out to me if you have any questions. I always try to get back to emails the day of, and if I'm not available for a phone call
         					leave a message and I'll answer you as soon as I can. If you prefer you can send me a text and I can answer that as fast as possible. Thanks!
                         </p>
